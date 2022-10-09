@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet"> 
+    <link href="weather-icons-master/css/weather-icons-wind.css" rel="stylesheet">
+    <link href="weather-icons-master/css/weather-icons-min.css" rel="stylesheet">
+    <link href="weather-icons-master/css/weather-icons.css" rel="stylesheet">
+    <link href="weather-icons-master/css/weather-icons-wind.min.css" rel="stylesheet">
+
     <title>Weather App</title>
 </head>
 <body>
@@ -18,5 +23,31 @@
             
         </div>
     </section> 
+    <section>
+        <p class="city_name">London</p>
+    </section>
+    <section>
+        <div class="card-container">
+            <div class="card card1">
+                    <p class="humidity">Humidity</p>
+                    <i class="wi wi-humidity humidity"></i>
+                    <div class="humidity-res humidity">11%</div>
+            </div>
+            <div class="card card2">
+                <p class="temp2">Temperature</p>
+                <div id="icon-weather">
+                    <i class="wi wi-day-cloudy"></i>
+                </div>
+                <div class="temp-res">
+                    <p>0<i class="wi wi-celsius"></i></p>
+                </div>                
+            </div>
+            <div class="card card3">  
+                <p class="temp2">Wind Speed</p>  
+                <i class="wi wi-direction-up-right ws"></i>
+                <div class="ws-res temp2">44Km/h</div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
