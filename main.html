@@ -17,8 +17,8 @@
         <div class="scontainer">
             <div class="logo"><span style="color: rgb(109,93,241)">Weather</span><span style="color: rgb(255,178,15)">App</span></div>
             <form action="" class="searchbar">
-                <input type="text" placeholder="Enter city name" name="q">
-                <button type="submit"><img src="./imgs/search.png"></button>
+                <input id="search-bar"type="text" placeholder="Enter city name" name="q">
+                <button id="searchbtn"><img src="./imgs/search.png"></button>
             </form>
             
         </div>
@@ -31,7 +31,7 @@
             <div class="card card1">
                     <p class="humidity">Humidity</p>
                     <i class="wi wi-humidity humidity"></i>
-                    <div class="humidity-res humidity">11%</div>
+                    <div id="humd" class="humidity-res humidity">0%</div>
             </div>
             <div class="card card2">
                 <p class="temp2">Temperature</p>
@@ -39,15 +39,18 @@
                     <i class="wi wi-day-cloudy"></i>
                 </div>
                 <div class="temp-res">
-                    <p>0<i class="wi wi-celsius"></i></p>
+                    <p id="tempa">0°C</p>
                 </div>                
             </div>
             <div class="card card3">  
                 <p class="temp2">Wind Speed</p>  
                 <i class="wi wi-direction-up-right ws"></i>
-                <div class="ws-res temp2">44Km/h</div>
+                <div class="ws-res temp2">
+                    <p id="wspeed">0km/h</p>
+                </div>
             </div>
         </div>
     </section>
 </body>
+<script src="js.js" defer></script>
 </html>
