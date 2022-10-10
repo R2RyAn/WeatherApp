@@ -18,18 +18,21 @@ let weather = {
         document.querySelector("#wspeed").innerText = Math.floor(speed)+"km/h";
     },
     search: function(){
-    this.fetchWeather(document.querySelector("#search-bar").value);
-    console.log(document.querySelector("#search-bar").value);
+        let val = document.querySelector("#search-bar").value;
+    this.fetchWeather(val);
+    console.log(val);
     }
 };
 
 document.querySelector("#searchbtn").addEventListener("click", function(){
     weather.search();
-    console.log("work");
 });
 
-document.querySelector("#search-bar").addEventListener("keyUp",function(){
-    if(event.key == "Enter"){
-        weather.search();
+
+var input = document.getElementById("search-bar");
+input.addEventListener("keypress", function(event) {
+if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("searchbtn").click();
     }
-})
+});
