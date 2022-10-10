@@ -20,7 +20,6 @@ let weather = {
     search: function(){
         let val = document.querySelector("#search-bar").value;
     this.fetchWeather(val);
-    console.log(val);
     }
 };
 
